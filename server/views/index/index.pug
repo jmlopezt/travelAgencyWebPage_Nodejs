@@ -1,0 +1,39 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Samba in Rio !
+        em Adventure
+
+
+block content
+    main.container.mt-5
+        h2.text-center.mb-5 About Us
+        .row.mb-5
+            .col-md-6
+                p   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur lobortis velit vel facilisis. 
+                    | Donec blandit efficitur purus in fermentum. Orci varius natoque penatibus et magnis dis parturient montes, 
+                    | nascetur ridiculus mus.
+
+                p   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur lobortis velit vel facilisis. 
+                    | Donec blandit efficitur purus in fermentum. Orci varius natoque penatibus et magnis dis parturient montes, 
+                    | nascetur ridiculus mus.
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="", class="img-fluid")
+        h2.text-center.mb-5 Next Travels
+        include ../layout/partials/travels
+        h2.text-center.mb-5 Offers
+        
+    .discount
+        .container
+            .row
+                .col-md-6
+                    .content
+                        h3 5 % Off
+                        p.title Live Canada
+                        p.date 20th April - 30th April
+                        p.price 1799 €
+    .container
+        h2.text-center.my-5 Experiences
+        include ../layout/partials/comments
+

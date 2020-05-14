@@ -1,0 +1,23 @@
+header
+    .navegation
+        nav.nav.justify-content-center.justify-content-md-end
+            dropdown
+                button.btn.btn-default.dropdown-toggle(type="button", role='menu', data-toggle='dropdown', aria-haspopup="true" aria-expanded="false") Language
+                    ul.dropdown-menu(role="menu", aria-labelledby='dropdownMenuLink')
+                        li(role="presentation")
+                            //a(role="menuitem",tabindex="-1",href="/{item.url}")= item.text
+                            a(href="www.marca.com",class="nav-link") English
+                                img(src="/img/logo.svg", alt="Travel Agency Logo", class="img-fluid")
+                            a.dropdown-item.nav-link(href="/fr", class="nav-link") French
+                            a.dropdown-item.nav-link(href="/de", class="nav-link") German
+        .container
+            .row.justify-content-center.justify-content-md-between.align-items-center.py-4
+                .col-6.col-md-4
+                    a(href="/")
+                        img(src="/img/logo.svg", alt="Travel Agency Logo", class="img-fluid")
+                .col-6.col-md-8
+                    nav.nav.justify-content-center.justify-content-md-end
+                        a.nav-link(href="/we", class=(route === '/we' ? 'active' : '')) About us
+                        a.nav-link(href="/travels", class=(route === '/travels' ? 'active' : '')) Travels
+                        a.nav-link(href="/comments", class=(route === '/comments' ? 'active' : '')) Comments
+

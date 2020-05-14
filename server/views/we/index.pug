@@ -1,0 +1,41 @@
+extends ../layout/index
+block content
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="About us image", class="img-fluid")
+            .col-md-7
+                h1 #{page}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            |Donec tincidunt eget elit et eleifend. Nam sed orci quis mi tempor placerat. 
+                            |In felis enim, pellentesque in lectus eu, laoreet euismod sem. Nunc dignissim diam 
+                            |nec pharetra semper. Nam gravida efficitur tempus. Cras sed egestas lacus. Aenean in 
+                            |facilisis turpis.
+                p   Nunc congue magna dapibus augue lobortis facilisis. Mauris aliquet ante pretium purus placerat, 
+                    |in congue lorem facilisis. Donec ultrices commodo leo sit amet feugiat. 
+                    |Vivamus non felis venenatis.
+                p   Vivamus eleifend iaculis purus et accumsan. Aliquam tristique metus vitae viverra sollicitudin. 
+                    |Proin facilisis purus tellus, a elementum libero tincidunt eu. Cras vel fringilla lorem. 
+                    |Aliquam erat volutpat. Donec eros leo, malesuada quis felis quis, scelerisque eleifend erat. 
+                    |Donec elementum sollicitudin vestibulum. Aliquam a euismod nisi.
+
+    .icon-list
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="/img/icono_seguridad.svg", class="img-fluid mb-4")
+                    h2.mb-4 Security
+                    p Donec tincidunt eget elit et eleifend. Nam sed orci quis mi tempor placerat. 
+                            |In felis enim, pellentesque in lectus eu
+
+                .col-md-4
+                    img(src="/img/icono_destinos.svg", class="img-fluid mb-4")
+                    h2.mb-4 Best Locations
+                    p Donec tincidunt eget elit et eleifend. Nam sed orci quis mi tempor placerat. 
+                            |In felis enim, pellentesque in lectus eu
+                .col-md-4
+                    img(src="/img/icono_precios.svg", class="img-fluid mb-4")
+                    h2.mb-4 Best Prices
+                    p Donec tincidunt eget elit et eleifend. Nam sed orci quis mi tempor placerat. 
+                            |In felis enim, pellentesque in lectus eu
+
